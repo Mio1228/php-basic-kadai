@@ -4,7 +4,7 @@
         public $name; 
         public $price; 
 
-        public function show_price($price) {
+        public function show_price() {
         echo $this -> price;
         }
 
@@ -19,7 +19,7 @@
         public $height;
         public $weight;
 
-        public function show_height($height){
+        public function show_height(){
             echo $this -> height;
         } 
 
@@ -35,4 +35,8 @@
     echo '<br>';
     $bird = new Animal('フクロウ', 100, 60);
     print_r($bird);
+    echo '<br>';
+    $onion -> show_price();
+    echo '<br>';
+    $bird -> show_height();
 ?>
